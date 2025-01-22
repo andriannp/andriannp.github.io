@@ -1,6 +1,7 @@
 ---
 title: Awards
 layout: default
+nav_order : 2
 ---
 
 ## Awards
