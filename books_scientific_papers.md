@@ -5,4 +5,4 @@ nav_order: 3
 ---
 
 ## Books & Scientific Papers
-- Prabawa, A. N., Romi, M. V., & Abdillah, A. F. . (2024). Understanding Consumer Intention To Use Indonesian Electronic Stamp Duty Through Technology Acceptence Model (TAM): Study On PT Peruri Digital Security’s Consumer. Management Studies and Entrepreneurship Journal (MSEJ), 5(1), 3045–3060. https://doi.org/10.37385/msej.v5i1.4440
+- Prabawa, A. N., Romi, M. V., & Abdillah, A. F. . (2024). _Understanding Consumer Intention To Use Indonesian Electronic Stamp Duty Through Technology Acceptance Model (TAM): Study on PT Peruri Digital Security’s Consumer._ Management Studies and Entrepreneurship Journal (MSEJ), 5(1), 3045–3060. https://doi.org/10.37385/msej.v5i1.4440
