@@ -3,7 +3,7 @@ title: Home
 layout: home
 ---
 
-**#Andrian Nur Prabawa., S.E., M.M., CDMS**
+#**Andrian Nur Prabawa., S.E., M.M., CDMS**
 
 **Executive Summary**
 
