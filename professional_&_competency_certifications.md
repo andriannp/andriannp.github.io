@@ -1,5 +1,5 @@
 ---
-title: Books & Scientific Papers
+title: Professional & Competency Certifications
 layout: default
 nav_order: 4
 ---
