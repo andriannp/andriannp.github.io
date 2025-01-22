@@ -1,0 +1,9 @@
+- (2024) Certified Digital Marketing Specialist (CDMS): iTrainAsia, Markplus Institute & Mcorp
+- (2024) Certified Marketing Skills Professional (CMSP): Revolution Mind Indonesia®
+- (2023) Certified Secure Computer User V3 (CSCU): EC-Counsil.
+- (2023) Pemasaran Online: Badan Nasional Sertifikasi Profesi (BNSP). Digital Marketing: Indonesian Professional Certification Authority (BNSP)
+- (2022) Perekayasa Perangkat Internet of Things: Badan Nasional Sertifikasi Profesi (BNSP) Internet of Things Device Engineering: Indonesian Professional Certification Authority (BNSP)
+- (2021) Digital Marketing: Markplus, Inc.
+- (2020) Tenaga Pemasar Operasional Area Kerja Pengelolaan Merek: Badan Nasional Sertifikasi Profesi (BNSP) Operational marketer in Brand: Indonesian Professional Certification Authority (BNSP)
+- (2020) Marketing 4.0: Markplus, Inc.
+- (2012) Teknisi Hardware Komputer - Lembaga Pendidikan Komputer Informatika Indonesia (LPKII). Computer Hardware Technician - The Indonesian Institute of Computer and Informatics (LPKII)
