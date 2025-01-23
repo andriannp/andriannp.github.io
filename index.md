@@ -5,7 +5,6 @@ nav_order: 1
 ---
 
 # Andrian Nur Prabawa., S.E., M.M., CDMS
-
 {: .fs-9 }
 
 Ahli Muda Pemasaran dan Penjualan bidang Pengembangan dan Strategi Pemasaran @ PT Kertas Padalarang (Peruri Security Paper Mill).
