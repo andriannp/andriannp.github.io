@@ -3,7 +3,7 @@ title: Task Force
 layout: home
 nav_order: 6
 ---
-### Task Force
+## Task Force
 - (2024-....) Tim Pendaftaran Hak Kekayaan Intelektual : Desain Industri & Merek 3D - PT Kertas Padalarang. Intellectual Property Registration Team: Industrial Design & Merk 3D - PT Kertas Padalarang
 - (2024-....) Tim Proyek Kode "CB" - PT Kertas Padalarang. Project code "CB" team - PT Kertas Padalarang
 - (2023) Bendahara Tim - Webinar Green Business: "membangun bisnis keberlanjutan dengan mengedepankan prinsip triple bottom line dalam upaya mengurangi dampak lingkungan" - Program Studi Magister Management Fakultas Ekonomi dan Bisnis Universitas Jenderal Achmad Yani. Treasurer for Webinar Green Business: Building a sustainable business by emphasizing the principles of the triple bottom line in efforts to reduce environmental impact - The Department of Master of Management, The Faculty of Business and Economics, General Achmad Yani University.
