@@ -8,7 +8,7 @@ nav_order: 7
 - (2022) PT Zhafirah Samudra Nusantara: rancang bangun situs web www.piozsn.co.id PT Zhafirah Samudra Nusantara: Coorporate Website www.piozsn.co.id
 - (2022) CV Elfatih Media Insani: rancang bangun situs web www.elfatihmediainsani.co.id CV Elfatih Media Insani: Coorporate Website www.elfatihmediainsani.co.id
 - (2022) Duvlenk Merch: rancang bangun situs web www.duvlenkmerch.com. Duvlenk Merch: Coorporate Website www.duvlenkmerch.com
-- (2022) raia.or.id: #UpSkillClass "Manajemen Kinerja Menggunakan Balanced Scorecard": DIrektur Komersial.
+- (2022) raia.or.id: #UpSkillClass "Manajemen Kinerja Menggunakan Balanced Scorecard": Direktur Komersial.
 - (2022) raia.or.id: #UpSkillClass "HRM Cycle: Siklus Manajemen Sumber Daya Manusia untuk Pemula": Direktur Komersial. 
 - (2021) Kedai Kopi Tapal Kuda: rancang bangun situs web www.kedaikopitapalkuda.co.id. Kedai Kopi Tapal Kuda: Coorporate Website www.kedaitapalkuda.com
 - (2021) Pena Anak Indonesia: rancang bangun situs web komunitas. Pena Anak Indonesia: Community Website
