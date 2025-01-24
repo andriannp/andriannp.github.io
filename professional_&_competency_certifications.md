@@ -14,6 +14,7 @@ nav_order: 4
 - (2020) Tenaga Pemasar Operasional Area Kerja Pengelolaan Merek: Badan Nasional Sertifikasi Profesi (BNSP) _Operational marketer in Brand: Indonesian Professional Certification Authority (BNSP)_
 - (2020) Marketing 4.0: Markplus, Inc.
 - (2012) Teknisi Hardware Komputer - Lembaga Pendidikan Komputer Informatika Indonesia (LPKII). _Computer Hardware Technician - The Indonesian Institute of Computer and Informatics (LPKII)_
+  
 ***
 ### Navigation
 - [Awards](/awards.html)
