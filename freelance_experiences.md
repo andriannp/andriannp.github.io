@@ -1,9 +1,9 @@
 ---
-title: Clients
+title: Freelance Experiences
 layout: home
 nav_order: 7
 ---
-## Clients
+## Freelance Experiences
 - (2023) PD Karya Sari: Perpanjangan Waktu Perlindungan Merek. PD Karya Sari: Extension of Trademark Protection Period 
 - (2022) PT Zhafirah Samudra Nusantara: rancang bangun situs web www.piozsn.co.id PT Zhafirah Samudra Nusantara: Coorporate Website www.piozsn.co.id
 - (2022) CV Elfatih Media Insani: rancang bangun situs web www.elfatihmediainsani.co.id CV Elfatih Media Insani: Coorporate Website www.elfatihmediainsani.co.id
