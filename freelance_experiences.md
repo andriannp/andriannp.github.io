@@ -15,3 +15,16 @@ nav_order: 7
 - (2021) Bengkel Narasi: rancang bangun situs web komunitas. Bengkel Narasi: Community Website
 - (2018) Anggota Tim Tabulasi Data Penelitian: Dr. Yadi Ernawadi, S.E., M.Sc. dan Yayang Kurniawan, S.E., M.M dengan judul: "Pengaruh Ekuitas Merek Terhadap Minat Berkunjung Kembali Wisatawan ke Situ Ciburuy Kabupaten Bandung Barat".
 - (2013) Layang Kertas: rancang bangun situs web www.layangkertas.com. Layang Kertas: Coorporate Website www.layangkertas.com
+***
+### Navigation
+- [Awards](/awards.html)
+- [Books & Scientific Papers](/books_&_scientific_papers.html)
+- [Professional & Competency Certifications](/professional_&_competency_certifications.html)
+- [Educational Background](/educational_background.html)
+- [Task Force](/task_force.html)
+- [Freelance Experiences](/freelance_experiences.html)
+- [Organizational Experiences](/organizational_experiences.html)
+- [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
+- [Trainings](/trainings.html)
+  
+----
