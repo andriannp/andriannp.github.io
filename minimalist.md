@@ -1,6 +1,6 @@
 ---
 title: Awards
-layout: minimalist
+layout: minimal
 ---
 
 ## Awards
