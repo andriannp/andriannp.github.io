@@ -42,3 +42,17 @@ nav_order: 6
 - (2016) Penanggungjawab penampilan UKM SENJA pada acara "Indomaret Funbike 2016 - Bandung".
 - (2015) Koordinator acara ulang tahun UKM SENJA ke 17 Tahun: "Satu Tujuan (17)".
 - (2015) Staf Humas kegiatan "Family gathering SENJA Angkatan 17"
+ 
+***
+### Navigation
+- [Awards](/awards.html)
+- [Books & Scientific Papers](/books_&_scientific_papers.html)
+- [Professional & Competency Certifications](/professional_&_competency_certifications.html)
+- [Educational Background](/educational_background.html)
+- [Task Force](/task_force.html)
+- [Freelance Experiences](/freelance_experiences.html)
+- [Organizational Experiences](/organizational_experiences.html)
+- [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
+- [Trainings](/trainings.html)
+  
+----
