@@ -49,7 +49,8 @@ nav_order: 10
 - (2014) Basic Leadership & Organization Management - Unit Kegiatan Mahasiswa Seni UNJANI (UKM SENJA) Universitas Jenderal Achmad Yani (UNJANI). Basic Leadership & Organization Management - Art Student Organizations, General Achmad Yani University (UNJANI) 
 - (2013-2014) English Course - PQEC Institute.
 - (2012) Teknisi Hardware Komputer - Lembaga Pendidikan Komputer Informatika Indonesia (LPKII). Computer Hardware Technician - Indonesian Institute of Computer and Informatics Education (LPKII)
-  
+- (2009) Graphic Design - Sekolah Tinggi Sains dan Teknologi Indonesia (ST-INTEN)
+
 ***
 ### Navigation
 - [Awards](/awards.html)
@@ -63,4 +64,3 @@ nav_order: 10
 - [Trainings](/trainings.html)
   
 ----
-- (2009) Graphic Design - Sekolah Tinggi Sains dan Teknologi Indonesia (ST-INTEN)
