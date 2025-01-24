@@ -23,6 +23,11 @@ Andrian Nur Prabawa has 6 years of experience as a certified marketer. With a ma
 - [Books & Scientific Papers](/books_&_scientific_papers.html)
 - [Professional & Competency Certifications](/professional_&_competency_certifications.html)
 - [Educational Background](/educational_background.html)
+- [Task Force](/task_force.html)
+- [Freelance Experiences](/freelance_experiences.html)
+- [Organizational Experiences](/organizational_experiences.html)
+- [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
+- [Trainings](/trainings.html)
   
 ----
 [Contact me]: mailto:contact@andrian.id
