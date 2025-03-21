@@ -5,6 +5,7 @@ nav_order: 10
 ---
 
 ## Training
+- Marketing Value - MarkPlus Institute (2025)
 - Analytical Thinking - MarkPlus Institute (2025)
 -	Formulating Marketing Strategy – MarkPlus Institute (2025)
 -	Designing Seamless Omni Experience - MarkPlus Institute (2025)
