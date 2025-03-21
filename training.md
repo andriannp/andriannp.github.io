@@ -5,6 +5,9 @@ nav_order: 10
 ---
 
 ## Training
+- Analytical Thinking - MarkPlus Institute (2025)
+-	Formulating Marketing Strategy – MarkPlus Institute (2025)
+-	Designing Seamless Omni Experience - MarkPlus Institute (2025)
 -	Certified Digital Marketing Specialist (CDMS) - iTrain Asia, MarkPlus Institute and MarkPlus Inc (2024)
 -	Marketing Course - Next MBA (2024-2025)
 -	Sucor Securities Bootcamp Batch 2 - Sucor Academy (2024)
