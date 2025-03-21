@@ -1,0 +1,66 @@
+---
+title: Training
+layout: home
+nav_order: 10
+---
+
+## Training
+-	Certified Digital Marketing Specialist (CDMS) - iTrain Asia, MarkPlus Institute and MarkPlus Inc (2024)
+-	Marketing Course - Next MBA (2024-2025)
+-	Sucor Securities Bootcamp Batch 2 - Sucor Academy (2024)
+-	TOEFL Preparation Course - Indonesia University of Education (2024)
+-	Exam Preparations Course of Certified Marketing Skill Professional (CMSP) - Revolution Mind Indonesia® (2024)
+-	Financial Report Analysis - Mekari University (2023)
+-	Cyber Security Awareness Batch 4 - Perum Peruri (2023)
+-	Auditor of ISO 9001 & 28000 - PT SGS Indonesia (2023)
+-	Digital Marketing - Perum Peruri (2023)
+-	Introduction to Data Science - Perum Peruri (2023)
+-	Growth Mindset - Indonesia Telecommunication & Digital Research Institute (ITDRI) (2022)
+-	Procedures for Calculating Domestic Component Level (TKDN) - PT Sucofindo (Persero) (2022)
+-	Industry 4.0 & Future Digital Technology - Perum Peruri (2022)
+-	Internet of Things – Edspert (2022)
+-	Transforming IoT and Future Challenges - Perum Peruri (2022)
+-	Blockchain Application for the Banking & Finance Sector - Perum Peruri (2022)
+-	IoT Technology Trend, Opportunity, & Future Challenges - Perum Peruri (2022)
+-	Robotic Process Automation for Industry 4.0 - Perum Peruri (2022)
+-	Smart Metering in IoT Ecosystem - Perum Peruri (2022)
+-	Strategic Guidance for Solving Complex Problems - Glints Expert Class (2022)
+-	Halal Assurance System - Peruri Security Paper Mill (2021)
+-	Advanced Internet of Things - Perum Peruri (2021)
+-	Halal Assurance System Implementation Strategy - LPPOM MUI West Java (2021)
+-	Agile & Scrum - Pijar Mahir (2021)
+-	The Principle of Advertisement - Pijar Mahir (2021)
+-	Branding - Pijar Mahir (2021)
+-	Lean Start Up - Pijar Mahir (2021)
+-	User Experience - Pijar Mahir (2021)
+-	Growth Mindset in Digital Era - Digilearn Telkom CorpU (2021)
+-	Internet of Things (IoT) - Perum Peruri & Telkom CorpU (2021)
+-	Digital Transformation Awareness - Perum Peruri (2021)
+-	Intrapreneur Fundamental - Digilearn Telkom CorpU (2021)
+-	IoT and The Great Feature of Industry 4.0 - Perum Peruri (2021)
+-	BUMN Digital Behaviour & Mindset - DigiLearn Telkom Indonesia (2021)
+-	Marketing Research - MarkPlus Institute (2021)
+-	Research & Data Science with R Mastery - Shift Academy (2021)
+-	Powerful Brand Development for Business - Skill Academy (2020)
+-	Social Media Management - PT TUW Global Internasional (2020)
+-	TOEFL Preparation Course - Indonesia University of Education (2020)
+-	School of Kastrat - Student Executive Board of Jenderal Achmad Yani University (BEM UNJANI) (2015)
+-	Basic Leadership & Organization Management - Student Association of Management Department (HIMAJ), Jenderal Achmad Yani University (UNJANI) (2014)
+-	Basic Leadership & Organization Management - UNJANI Arts Student Activity Unit (UKM SENJA), Jenderal Achmad Yani University (UNJANI) (2014)
+-	English Course - PQEC Institute (2013‒2014)
+-	Computer Hardware Technician - Indonesian Institute of Computer and Informatics Education (LPKII) (2012)
+-	Graphic Design - Indonesian College of Science and Technology (ST-INTEN) (2009)
+
+***
+### Navigation
+- [Awards](/awards.html)
+- [Books & Scientific Papers](/books_&_scientific_papers.html)
+- [Professional & Competency Certifications](/professional_&_competency_certifications.html)
+- [Educational Background](/educational_background.html)
+- [Task Force](/task_force.html)
+- [Freelance Experiences](/freelance_experiences.html)
+- [Organizational Experiences](/organizational_experiences.html)
+- [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
+- [Trainings](/trainings.html)
+  
+----
