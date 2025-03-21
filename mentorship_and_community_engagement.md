@@ -5,10 +5,10 @@ nav_order: 9
 ---
 
 ## Mentorship and Community Engagement
+- - Internal Trainer: in house marketing training (2025)
 - Fieldwork Practice (PKL) Supervisor: on behalf of Yuli Yulianti - Industrial Engineering Program, Faculty of Creative Industries, Bandung Technology University (2024)
 - Fieldwork Practice (PKL) Supervisor: on behalf of Rika Fitri Alfiani - Management Program, INABA University (2024)
 - Fieldwork Practice (PKL) Supervisor: on behalf of Zalfa Nazia Katumiri - Management Program, Faculty of Economics and Business, Pasundan University (2024)
-- Internal Trainer: in house marketing training (2025)
 - Internal Trainer: Customer Satisfication Index (CSI) (2023)
 - Internal Trainer: Marketing Communication (2023)
 - Tutor : Identifying the Authenticity of Indonesian Excise Bands - The Regional Training Office of Finance Education and Training Agency (FETA): Palembang City.
