@@ -5,10 +5,18 @@ nav_order: 9
 ---
 
 ## Mentorship and Community Engagement
+- Fieldwork Practice (PKL) Supervisor, on behalf of Yuli Yulianti - Industrial Engineering Program, Faculty of Creative Industries, Bandung Institute of Technology.(2024)
+- Fieldwork Practice (PKL) Supervisor, on behalf of Rika Fitri Alfiani - Management Program, Inaba University. (2024)
+- Fieldwork Practice (PKL) Supervisor, on behalf of Zalfa Nazia Katumiri - Management Program, Faculty of Economics and Business, Pasundan University. (2024)
+- Internal Trainer: in house marketing training (2025)
+- Internal Trainer: Customer Satisfication Index (CSI) (2023)
+- Internal Trainer: Marketing Communication (2023)
+- Tutor : Identifying the Authenticity of Indonesian Excise Bands - The Regional Training Office of Finance Education and Training Agency (FETA): Palembang City.
+- Tutor : Identifying the Authenticity of Indonesian Excise Bands Technical Training - West Java Municipal Police (2022)
+- Internal Trainer: Procedures for Calculating Domestic Component Level (TKDN) - PT Kertas Padalarang (2022)
 -	Sigap UMKM: Digital Business and Cyber Security Mentoring Training for MSMEs - Ministry of Cooperatives and Small and Medium Enterprises (Kemenkop UKM), MicroMentor, Center for Inclusive Growth MasterCard (2021)
 -	Snack NN: Audit Companion of Halal Product Assurance System (SJH) (2019)
 -	Snack NN: Audit Companion of Home Industry Food Production (PIRT) (2017)
-
 
 ***
 ### Navigation
