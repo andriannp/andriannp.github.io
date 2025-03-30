@@ -65,6 +65,6 @@ nav_order: 10
 - [Freelance Experiences](/freelance_experiences.html)
 - [Organizational Experiences](/organizational_experiences.html)
 - [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
-- [Trainings](/trainings.html)
+- [Training](/training.html)
   
 ----
