@@ -5,7 +5,7 @@ nav_order : 2
 ---
 
 ## Awards
-Awarded the gold medal in the innovation stream category at the PERURI Innovation Award and Kaizen Award 2024 (IAKA 2024).
+Awarded the gold medal in the innovation stream category at the PERURI Innovation Award and Kaizen Award 2024 (IAKA 2024) for innovation project proposal titled “rancang bangun e-commerce untuk produk specialty paper di PT Kertas Padalarang” with main role as a team leader.
 
 ***
 ### Navigation
@@ -17,6 +17,6 @@ Awarded the gold medal in the innovation stream category at the PERURI Innovatio
 - [Freelance Experiences](/freelance_experiences.html)
 - [Organizational Experiences](/organizational_experiences.html)
 - [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
-- [Trainings](/trainings.html)
+- [Trainings](/training.html)
   
 ----
