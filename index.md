@@ -27,7 +27,7 @@ Certified marketer with 6 years of experience. Hold a Master’s degree in Manag
 - [Freelance Experiences](/freelance_experiences.html)
 - [Organizational Experiences](/organizational_experiences.html)
 - [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
-- [Trainings](/trainings.html)
+- [Training](/training.html)
   
 ----
 [Contact me]: mailto:contact@andrian.id
