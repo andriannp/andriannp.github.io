@@ -25,7 +25,7 @@ Certified marketer with 6 years of experience. Hold a Master’s degree in Manag
 - [Education](/education.html)
 - [Task Force](/task_force.html)
 - [Freelance Experiences](/freelance_experiences.html)
-- [Organizational Experiences](/organizational_experiences.html)
+- [Organizations](/organizations.html)
 - [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
 - [Training](/training.html)
   
