@@ -20,7 +20,7 @@ nav_order: 8
 - [Education](/education.html)
 - [Task Force](/task_force.html)
 - [Freelance Experiences](/freelance_experiences.html)
-- [Organizational Experiences](/organizational_experiences.html)
+- [Organizations](/organizations.html)
 - [Mentorship and Community Engagements](/mentorship_and_community_engagement.html)
 - [Training](/training.html)
   
