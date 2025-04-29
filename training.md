@@ -5,7 +5,7 @@ nav_order: 10
 ---
 
 ## Training
-- Domestic Component Level (TKDN) - Balai Besar Standardisasi dan Pelayanan Jasa Industri Selulosa (BBSPJIS)  
+- Domestic Component Level (TKDN) - Balai Besar Standardisasi dan Pelayanan Jasa Industri Selulosa (BBSPJIS) (2025)
 - Mahad Bimibingan Islam - Yayasan Bimbingan Islam (2025)
 - BilQolam - Pesantren Ilmu Al Quran (2025)
 - Marketing Value - MarkPlus Institute (2025)
