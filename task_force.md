@@ -4,7 +4,7 @@ layout: home
 nav_order: 6
 ---
 ## Task Force
-- Corporate Long Term Plan (RJPP) Team (2025-Present)
+- Corporate Long Term Plan (RJPP) Team 2026-2030 (2025-Present)
 -	Intellectual Property Registration Team: Industrial Design and 3D Trademarks - Peruri Security Paper Mill (2024‒Present)
 -	Code “CB” Project Team - Peruri Security Paper Mill (2024‒Present)
 -	Treasurer for Green Business Webinar: “Building A Sustainable Business by Emphasizing the Triple Bottom Line Principle in an Attempt to Diminish Environmental Impact” - Master of Management Study Program, Faculty of Economics and Business, Jenderal Achmad Yani University (2023)
