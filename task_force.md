@@ -4,6 +4,7 @@ layout: home
 nav_order: 6
 ---
 ## Task Force
+- Head of Career Development Center IKA FEB UNJANI https://ikafebunjani.or.id (2025-Present)
 - Corporate Long Term Plan (RJPP) Team 2026-2030 (2025-Present)
 -	Intellectual Property Registration Team: Industrial Design and 3D Trademarks - Peruri Security Paper Mill (2024‒Present)
 -	Code “CB” Project Team - Peruri Security Paper Mill (2024‒Present)
