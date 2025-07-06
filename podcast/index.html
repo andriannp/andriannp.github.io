@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrian Nur Prabawa's CV</title>
+    <!-- Tautan ke Font Awesome untuk ikon kontrol -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Gaya dasar untuk body */
+        body {
+            font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e0f2f7; /* Warna latar belakang lembut */
+            margin: 0;
+            overflow: hidden; /* Mencegah scroll */
+        }
+
+        /* Kontainer utama pemutar lagu */
+        .player-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px; /* Sudut membulat */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Bayangan yang lebih lembut */
+            text-align: center;
+            width: 320px; /* Lebar tetap */
+            max-width: 90%; /* Responsif untuk layar kecil */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Gaya untuk judul lagu */
+        .song-title {
+            font-size: 1.6em;
+            margin-bottom: 8px;
+            color: #2c3e50; /* Warna teks gelap */
+            white-space: nowrap; /* Mencegah teks wrap */
+            overflow: hidden; /* Menyembunyikan overflow */
+            text-overflow: ellipsis; /* Menambahkan elipsis jika terlalu panjang */
+        }
+
+        /* Gaya untuk nama artis */
+        .artist-name {
+            font-size: 1.1em;
+            color: #7f8c8d; /* Warna teks abu-abu */
+            margin-bottom: 25px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Kontainer kontrol tombol */
+        .controls {
+            display: flex;
+            justify-content: center; /* Memusatkan tombol */
+            gap: 25px; /* Jarak antar tombol, bisa disesuaikan jika hanya satu tombol */
+            margin-top: 25px;
+        }
+
+        /* Gaya dasar untuk tombol kontrol */
+        .control-btn {
+            background-color: #3498db; /* Warna biru cerah */
+            color: white;
+            border: none;
+            border-radius: 50%; /* Tombol bulat */
+            width: 55px;
+            height: 55px;
+            font-size: 1.3em;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
+        }
+
+        /* Efek hover untuk tombol kontrol */
+        .control-btn:hover {
+            background-color: #2980b9; /* Warna biru lebih gelap saat hover */
+            transform: translateY(-2px); /* Sedikit naik saat hover */
+        }
+
+        /* Gaya khusus untuk tombol putar/jeda */
+        .control-btn#playPauseBtn {
+            width: 70px; /* Lebih besar */
+            height: 70px;
+            font-size: 1.8em;
+            background-color: #27ae60; /* Warna hijau */
+            box-shadow: 0 6px 15px rgba(39, 174, 96, 0.3);
+        }
+
+        /* Efek hover khusus untuk tombol putar/jeda */
+        .control-btn#playPauseBtn:hover {
+            background-color: #229954; /* Warna hijau lebih gelap saat hover */
+            transform: translateY(-3px);
+        }
+
+        /* Kontainer progress bar */
+        .progress-container {
+            width: 100%;
+            height: 10px;
+            background-color: #ecf0f1; /* Warna abu-abu terang */
+            border-radius: 5px; /* Sudut membulat */
+            margin-bottom: 15px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden; /* Memastikan bar tidak meluber */
+        }
+
+        /* Bar progres yang mengisi */
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #e67e22; /* Warna oranye */
+            border-radius: 5px;
+            transition: width 0.1s linear; /* Transisi halus untuk pergerakan bar */
+        }
+
+        /* Tampilan waktu saat ini dan durasi */
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-container">
+        <!-- Judul lagu dan nama artis, akan diatur secara statis untuk satu lagu -->
+        <h2 class="song-title" id="songTitle"></h2>
+        <p class="artist-name" id="artistName"></p>
+
+        <!-- Elemen audio HTML5 untuk file .wav -->
+        <audio id="audioPlayer">
+            <!-- Sumber lagu telah diperbarui ke URL Dropbox yang Anda berikan -->
+            <source src="https://www.dropbox.com/scl/fi/29o6bk7deqx6w14yj871r/Andrian-Nur-Prabawa_-A-Marketing-and-Management-Career.wav?rlkey=rzzqu0003vqrmdxlihpfx40gt&st=cp2aavx6&dl=1" type="audio/wav">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="time-display">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+            <!-- Hanya tombol putar/jeda untuk satu lagu -->
+            <button class="control-btn" id="playPauseBtn" aria-label="Putar atau Jeda">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mendapatkan referensi ke elemen-elemen DOM
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const progressBar = document.getElementById('progressBar');
+        const progressContainer = document.getElementById('progressContainer');
+        const currentTimeSpan = document.getElementById('currentTime');
+        const durationSpan = document.getElementById('duration');
+        const songTitle = document.getElementById('songTitle');
+        const artistName = document.getElementById('artistName');
+
+        // Variabel status pemutar
+        let isPlaying = false;
+
+        // Atur judul dan artis secara statis untuk satu lagu
+        const currentSong = {
+            title: "Andrian Nur Prabawa's CV", // Judul lagu baru
+            artist: "Andrian Nur Prabawa", // Artis baru
+            src: "https://www.dropbox.com/scl/fi/29o6bk7deqx6w14yj871r/Andrian-Nur-Prabawa_-A-Marketing-and-Management-Career.wav?rlkey=rzzqu0003vqrmdxlihpfx40gt&st=cp2aavx6&dl=1" // Jalur file .wav baru
+        };
+
+        songTitle.textContent = currentSong.title;
+        artistName.textContent = currentSong.artist;
+        audioPlayer.src = currentSong.src; // Pastikan audio player menggunakan src yang benar
+
+        /**
+         * Memulai pemutaran lagu.
+         */
+        function playSong() {
+            audioPlayer.play();
+            playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>'; // Mengubah ikon menjadi jeda
+            isPlaying = true;
+        }
+
+        /**
+         * Menjeda pemutaran lagu.
+         */
+        function pauseSong() {
+            audioPlayer.pause();
+            playPauseBtn.innerHTML = '<i class="fas fa-play"></i>'; // Mengubah ikon menjadi putar
+            isPlaying = false;
+        }
+
+        /**
+         * Mengubah status putar/jeda.
+         */
+        function togglePlayPause() {
+            if (isPlaying) {
+                pauseSong();
+            } else {
+                playSong();
+            }
+        }
+
+        /**
+         * Memperbarui progress bar dan tampilan waktu.
+         */
+        function updateProgress() {
+            const { duration, currentTime } = audioPlayer;
+            // Menghitung persentase progres
+            const progressPercent = (currentTime / duration) * 100;
+            progressBar.style.width = `${progressPercent}%`;
+
+            // Memformat waktu saat ini
+            let currentMinutes = Math.floor(currentTime / 60);
+            let currentSeconds = Math.floor(currentTime % 60);
+            if (currentSeconds < 10) currentSeconds = `0${currentSeconds}`;
+            currentTimeSpan.textContent = `${currentMinutes}:${currentSeconds}`;
+
+            // Memformat total durasi
+            let durationMinutes = Math.floor(duration / 60);
+            let durationSeconds = Math.floor(duration % 60);
+            if (durationSeconds < 10) durationSeconds = `0${durationSeconds}`;
+
+            // Menampilkan durasi hanya jika valid (bukan NaN)
+            if (!isNaN(durationMinutes) && !isNaN(durationSeconds)) {
+                durationSpan.textContent = `${durationMinutes}:${durationSeconds}`;
+            } else {
+                durationSpan.textContent = '0:00'; // Default jika durasi tidak tersedia
+            }
+        }
+
+        /**
+         * Mengatur posisi pemutaran lagu berdasarkan klik pada progress bar.
+         * @param {Event} e - Objek event klik.
+         */
+        function setProgress(e) {
+            const width = progressContainer.clientWidth; // Lebar total progress bar
+            const clickX = e.offsetX; // Posisi klik relatif terhadap elemen
+            const duration = audioPlayer.duration; // Total durasi lagu
+            audioPlayer.currentTime = (clickX / width) * duration; // Mengatur waktu pemutaran
+        }
+
+        // Event Listeners
+        playPauseBtn.addEventListener('click', togglePlayPause);
+
+        // Memperbarui progres saat waktu pemutaran berubah
+        audioPlayer.addEventListener('timeupdate', updateProgress);
+        // Kembali ke awal saat lagu selesai (karena hanya satu lagu)
+        audioPlayer.addEventListener('ended', () => {
+            audioPlayer.currentTime = 0; // Mengatur ulang ke awal
+            pauseSong(); // Menjeda setelah selesai
+        });
+        // Mengatur progres saat progress bar diklik
+        progressContainer.addEventListener('click', setProgress);
+
+        // Memuat metadata audio saat halaman pertama kali dimuat
+        window.onload = () => {
+            // Memaksa pemuatan metadata untuk mendapatkan durasi awal
+            audioPlayer.load();
+        };
+
+        // Memperbarui durasi setelah metadata dimuat
+        audioPlayer.addEventListener('loadedmetadata', updateProgress);
+    </script>
+</body>
+</html>
