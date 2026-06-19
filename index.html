@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official portfolio website of Andrian Nur Prabawa, S.E., M.M., CDMS - Strategic Planning Specialist & Certified Marketer.">
+  <title>Andrian Nur Prabawa | Strategic Planning Specialist & Certified Marketer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo">
+        ANDRIAN<span>.</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#details" class="nav-link">Details</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="mobile-nav-links">
+        <a href="#" class="mobile-nav-link" onclick="closeMobileNav()">Home</a>
+        <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()">About</a>
+        <a href="#experience" class="mobile-nav-link" onclick="closeMobileNav()">Experience</a>
+        <a href="#education" class="mobile-nav-link" onclick="closeMobileNav()">Education & Certifications</a>
+        <a href="#publications" class="mobile-nav-link" onclick="closeMobileNav()">Publications</a>
+        <a href="#details" class="mobile-nav-link" onclick="closeMobileNav()">Task Force & Training</a>
+        <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal active">
+          <div class="hero-tag">
+            <span class="badge">Strategic Planning & Marketing</span>
+          </div>
+          <h1 class="hero-title">Andrian Nur Prabawa<br><span style="color: var(--color-primary); font-size: 0.7em;">S.E., M.M., CDMS</span></h1>
+          <p class="hero-description">
+            A certified strategic marketer and management professional with 7+ years of experience. Currently serving as <strong>Ahli Muda Perencanaan Strategis</strong> at PT Kertas Padalarang (Perum Peruri Group). Competency Assessor specializing in Digital Marketing, academic tutor, published author, and systems auditor.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary">
+              Get in Touch
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#experience" class="btn btn-secondary">View Experience</a>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>West Bandung Regency, ID</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>contact@andrian.id</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrapper reveal active" style="transition-delay: 0.1s;">
+          <div class="hero-image-container">
+            <img src="assets/images/profile.jpg" alt="Andrian Nur Prabawa S.E., M.M., CDMS">
+          </div>
+          <div class="hero-image-bg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT & CORE EXPERTISE SECTION
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div style="max-width: 700px; margin-bottom: 3rem;">
+        <span class="subtitle">About Me</span>
+        <h2>Multidisciplinary Management Professional</h2>
+        <p>
+          I bridge the gap between strategic corporate planning, digital marketing execution, and organizational compliance. With an academic background in Economics and Management, combined with technical training in IT, I specialize in building cohesive roadmaps that align corporate objectives with market growth.
+        </p>
+      </div>
+
+      <div class="grid grid-3 expertise-grid">
+        <!-- Card 1 -->
+        <div class="card expertise-card reveal">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3>Strategic Planning</h3>
+          <p>Formulating corporate policies, strategic roadmaps (RJPP), alignment checks, CAPEX feasibility analysis, and tracking corporate KPIs & OMTI at directorate levels.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card expertise-card reveal" style="transition-delay: 0.1s;">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24"><path d="M23 6a5 5 0 0 0-5-5 5 5 0 0 0-5 5v2H5V6a5 5 0 0 0-5 5 5 5 0 0 0 5 5h13a5 5 0 0 0 5-5V9h-5V6z"></path><circle cx="12" cy="12" r="10"></circle></svg>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Certified Digital Marketing Specialist (CDMS). Experienced in managing e-commerce setups, analyzing market performance, and brand management.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card expertise-card reveal" style="transition-delay: 0.2s;">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>Auditing & Teaching</h3>
+          <p>Registered BNSP Competency Assessor in Retail. Auditor for ISO 9001 and ISO 28000 systems. Dedicated online academic tutor at Universitas Terbuka.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WORK EXPERIENCE SECTION
+       ========================================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <span class="subtitle">Career Journey</span>
+        <h2>Work Experience</h2>
+      </div>
+
+      <div class="experience-timeline">
+        <!-- Item 1: PT Kertas Padalarang -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div class="timeline-title-wrap">
+              <span class="timeline-company">PT Kertas Padalarang (Perum Peruri Group)</span>
+              <span class="timeline-role">Strategic Planning & Marketing Roles <span class="timeline-type">(Full Time)</span></span>
+            </div>
+            <span class="timeline-date">June 2019 - Present</span>
+          </div>
+          <div class="timeline-body">
+            <p>PT Kertas Padalarang (Peruri Security Paper Mill) is a subsidiary of Perum Peruri Group specializing in security and specialty paper manufacturing. I have grown through multiple strategic positions:</p>
+            
+            <div class="sub-roles">
+              <!-- Sub role 1 -->
+              <div class="sub-role-item">
+                <div class="sub-role-dot"></div>
+                <div class="sub-role-header">
+                  <span class="sub-role-title">Ahli Muda Perencanaan Strategis</span>
+                  <span class="sub-role-date">April 2026 - Present</span>
+                </div>
+                <ul class="timeline-list">
+                  <li><strong>Strategic Development:</strong> Formulate corporate policies and short-, medium-, and long-term strategic roadmaps.</li>
+                  <li><strong>Strategic Alignment:</strong> Ensure corporate strategies strictly align with the company's vision, mission, and core business goals.</li>
+                  <li><strong>Performance Management (KPI & OMTI):</strong> Manage, monitor, and align Corporate KPIs and OMTI across Board of Directors, VP, and Department levels.</li>
+                  <li><strong>CAPEX Oversight:</strong> Monitor and evaluate Capital Expenditure feasibility studies and proposals across business units.</li>
+                  <li><strong>Financial & Operational Optimization:</strong> Collaborate on financial report analysis and evaluate business processes for operational efficiency.</li>
+                </ul>
+              </div>
+              
+              <!-- Sub role 2 -->
+              <div class="sub-role-item">
+                <div class="sub-role-dot"></div>
+                <div class="sub-role-header">
+                  <span class="sub-role-title">Ahli Muda Pengembangan dan Strategi</span>
+                  <span class="sub-role-date">May 2025 - April 2026</span>
+                </div>
+                <ul class="timeline-list">
+                  <li><strong>Product Development:</strong> Led end-to-end product development initiatives, prototype testing, and post-launch evaluation.</li>
+                  <li><strong>E-Commerce Operation:</strong> Managed comprehensive e-commerce sales planning, budgeting, and external coordination (LKPP, payment gateways).</li>
+                  <li><strong>Market Research:</strong> Directed customer satisfaction surveys across multiple product categories to guide organizational improvement.</li>
+                </ul>
+              </div>
+
+              <!-- Sub role 3 -->
+              <div class="sub-role-item">
+                <div class="sub-role-dot"></div>
+                <div class="sub-role-header">
+                  <span class="sub-role-title">Ahli Muda Pemasaran dan Penjualan Bidang Pengembangan dan Strategi Pemasaran</span>
+                  <span class="sub-role-date">June 2024 - May 2025</span>
+                </div>
+              </div>
+
+              <!-- Sub role 4 -->
+              <div class="sub-role-item">
+                <div class="sub-role-dot"></div>
+                <div class="sub-role-header">
+                  <span class="sub-role-title">Senior Staff Pemasaran</span>
+                  <span class="sub-role-date">June 2019 - June 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: UT -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div class="timeline-title-wrap">
+              <span class="timeline-company">Universitas Terbuka</span>
+              <span class="timeline-role">Academic Tutor - Fakultas Ekonomi dan Bisnis <span class="timeline-type">(Part-Time)</span></span>
+            </div>
+            <span class="timeline-date">March 2026 - Present</span>
+          </div>
+          <div class="timeline-body">
+            <p>Provide structured academic guidance, facilitate high-quality online learning experiences, and foster interactive scholarly environments to ensure students master the core economics and business curriculum.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: LSP Retail Indonesia -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div class="timeline-title-wrap">
+              <span class="timeline-company">Lembaga Sertifikasi Profesi Retail Indonesia (LSP Retail Indonesia)</span>
+              <span class="timeline-role">BNSP's Assessor Competency <span class="timeline-type">(Part-Time)</span></span>
+            </div>
+            <span class="timeline-date">Jan 2026 - Present</span>
+          </div>
+          <div class="timeline-body">
+            <p>Conduct formal competency assessments under BNSP (Indonesian Professional Certification Authority) rules. Plan assessments, collect evidence, verify candidate competency in retail and digital marketing sectors, and contribute to validation processes for quality assurance. (No Reg MET 0000.004255 2025).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDUCATION & CERTIFICATIONS SECTION
+       ========================================================================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="subtitle">Credentials</span>
+        <h2>Education & Certifications</h2>
+      </div>
+
+      <div class="edu-cert-tabs">
+        <button class="tab-btn active" data-tab="tab-education">Education</button>
+        <button class="tab-btn" data-tab="tab-certifications">Certifications</button>
+      </div>
+
+      <!-- Education Tab Content -->
+      <div class="tab-content active" id="tab-education">
+        <div class="edu-grid">
+          <!-- Master's Degree -->
+          <div class="card edu-card reveal">
+            <div class="edu-info">
+              <span class="edu-degree">Master's Degree in Management (M.M.)</span>
+              <span class="edu-school">Jenderal Achmad Yani University, Cimahi</span>
+              <span class="edu-gpa">GPA: 3.78 / 4.00</span>
+            </div>
+            <div class="edu-aside">
+              <span class="edu-date">2022 ‒ 2024</span>
+              <a href="#" class="cert-link" target="_blank" rel="noopener">
+                View Transcript
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Bachelor's Degree -->
+          <div class="card edu-card reveal">
+            <div class="edu-info">
+              <span class="edu-degree">Bachelor's Degree in Economics (S.E.)</span>
+              <span class="edu-school">Jenderal Achmad Yani University, Cimahi</span>
+              <span class="edu-gpa">GPA: 3.65 / 4.00</span>
+            </div>
+            <div class="edu-aside">
+              <span class="edu-date">2014 ‒ 2018</span>
+              <a href="#" class="cert-link" target="_blank" rel="noopener">
+                View Transcript
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Information Technology -->
+          <div class="card edu-card reveal">
+            <div class="edu-info">
+              <span class="edu-degree">Primary Expert (A.P.) in Information Technology</span>
+              <span class="edu-school">Electronic Engineering Polytechnic Institute of Surabaya (EEPIS / PENS)</span>
+              <span class="edu-gpa">GPA: 3.59 / 4.00</span>
+            </div>
+            <div class="edu-aside">
+              <span class="edu-date">2010 ‒ 2011</span>
+              <a href="#" class="cert-link" target="_blank" rel="noopener">
+                View Transcript
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Tab Content -->
+      <div class="tab-content" id="tab-certifications">
+        <div class="cert-controls">
+          <div class="search-input-wrapper">
+            <span class="search-icon">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </span>
+            <input type="text" id="cert-search" class="search-input" placeholder="Search certifications...">
+          </div>
+          <select id="cert-filter" class="cert-filter-select">
+            <option value="all">All Sectors</option>
+            <option value="marketing">Marketing & Brand</option>
+            <option value="assessor">Assessor & Audit</option>
+            <option value="tech">IT & Technology</option>
+          </select>
+        </div>
+
+        <div class="cert-grid" id="cert-grid">
+          <!-- Cert 1 -->
+          <div class="card cert-card" data-category="assessor" data-keywords="assessor competency competency bnsp indonesian professional certification authority">
+            <div class="cert-header">
+              <h3 class="cert-title">Assessor Competency</h3>
+              <p class="cert-issuer">Indonesian Professional Certification Authority (BNSP)</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2025</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 2 -->
+          <div class="card cert-card" data-category="marketing" data-keywords="certified digital marketing specialist cdms itrain asia singapore">
+            <div class="cert-header">
+              <h3 class="cert-title">Certified Digital Marketing Specialist (CDMS)</h3>
+              <p class="cert-issuer">iTrain Asia Pte. Ltd. Singapore</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2024</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 3 -->
+          <div class="card cert-card" data-category="marketing" data-keywords="certified marketing skills professional cmsp revolution mind indonesia">
+            <div class="cert-header">
+              <h3 class="cert-title">Certified Marketing Skills Professional (CMSP)</h3>
+              <p class="cert-issuer">Revolution Mind Indonesia®</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2024</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 4 -->
+          <div class="card cert-card" data-category="tech" data-keywords="certified secure computer user cscu ec-council">
+            <div class="cert-header">
+              <h3 class="cert-title">Certified Secure Computer User V3 (CSCU)</h3>
+              <p class="cert-issuer">EC-Council</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2023</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 5 -->
+          <div class="card cert-card" data-category="marketing" data-keywords="digital marketing bnsp indonesian professional certification authority">
+            <div class="cert-header">
+              <h3 class="cert-title">Digital Marketing</h3>
+              <p class="cert-issuer">Indonesian Professional Certification Authority (BNSP)</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2023</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 6 -->
+          <div class="card cert-card" data-category="tech" data-keywords="internet of things iot device engineering bnsp indonesian professional certification authority">
+            <div class="cert-header">
+              <h3 class="cert-title">Internet of Things Device Engineering</h3>
+              <p class="cert-issuer">Indonesian Professional Certification Authority (BNSP)</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2022</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 7 -->
+          <div class="card cert-card" data-category="marketing" data-keywords="digital marketing markplus inc">
+            <div class="cert-header">
+              <h3 class="cert-title">Digital Marketing</h3>
+              <p class="cert-issuer">Markplus, Inc.</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2021</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 8 -->
+          <div class="card cert-card" data-category="marketing" data-keywords="operational marketer in brand bnsp indonesian professional certification authority">
+            <div class="cert-header">
+              <h3 class="cert-title">Operational Marketer in Brand</h3>
+              <p class="cert-issuer">Indonesian Professional Certification Authority (BNSP)</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2020</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 9 -->
+          <div class="card cert-card" data-category="marketing" data-keywords="marketing 4.0 markplus inc">
+            <div class="cert-header">
+              <h3 class="cert-title">Marketing 4.0</h3>
+              <p class="cert-issuer">Markplus, Inc.</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2020</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <!-- Cert 10 -->
+          <div class="card cert-card" data-category="tech" data-keywords="computer hardware technician lpkii the indonesian institute of computer and informatics">
+            <div class="cert-header">
+              <h3 class="cert-title">Computer Hardware Technician</h3>
+              <p class="cert-issuer">The Indonesian Institute of Computer and Informatics (LPKII)</p>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-year">2012</span>
+              <a href="#" class="cert-link">View Certificate <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BOOKS & SCIENTIFIC PAPERS SECTION
+       ========================================================================== -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 3rem;">
+        <span class="subtitle">Intellectual Contributions</span>
+        <h2>Books & Scientific Papers</h2>
+        <p>I actively contribute to academic research and management publications in systems management and marketing ecosystems.</p>
+      </div>
+
+      <div class="grid grid-3 pub-grid">
+        <!-- Publication 1 -->
+        <div class="card pub-card reveal">
+          <div>
+            <div class="pub-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3 class="pub-title">Understanding Consumer Intention to Use Indonesian Electronic Stamp Duty through Technology Acceptance Model (TAM): Study on PT Peruri Digital Security's Consumer</h3>
+            <p class="pub-authors">Prabawa, A. N., Romi, M. V., & Abdillah, A. F. (2024)</p>
+            <p class="pub-publisher">Management Studies and Entrepreneurship Journal (MSEJ), 5(1), 3045–3060.</p>
+          </div>
+          <div class="pub-footer">
+            <a href="https://doi.org/10.37385/msej.v5i1.4440" class="pub-link" target="_blank" rel="noopener">
+              View Journal
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="card pub-card reveal" style="transition-delay: 0.1s;">
+          <div>
+            <div class="pub-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+            <h3 class="pub-title">Pengantar Sistem Informasi Manajemen</h3>
+            <p class="pub-authors">Prabawa, A. N. et al. (2023)</p>
+            <p class="pub-publisher">Malang: PT Literasi Nusantara Abadi Grup. Academic Book.</p>
+          </div>
+          <div class="pub-footer">
+            <a href="#" class="pub-link">
+              View Recordal of Creation
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Publication 3 -->
+        <div class="card pub-card reveal" style="transition-delay: 0.2s;">
+          <div>
+            <div class="pub-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+            <h3 class="pub-title">Manajemen Pemasaran (Perspektif Internet of Things)</h3>
+            <p class="pub-authors">Prabawa, A. N. et al. (2023)</p>
+            <p class="pub-publisher">Bandung: CV Media Sains Indonesia. Academic Book.</p>
+          </div>
+          <div class="pub-footer">
+            <a href="#" class="pub-link">
+              View Recordal of Creation
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AWARDS SECTION
+       ========================================================================== -->
+  <section class="section" style="background-color: var(--color-bg-alt);">
+    <div class="container">
+      <div class="card reveal" style="padding: 3rem 2rem; border-left: 4px solid var(--color-primary);">
+        <div class="grid grid-2" style="align-items: center; gap: 2rem;">
+          <div>
+            <span class="badge" style="margin-bottom: 1rem; border-color: gold; color: gold; background-color: rgba(218, 165, 32, 0.1);">Award Recognition</span>
+            <h2 style="margin-bottom: 1rem;">PERURI Innovation Award & Kaizen Award 2024</h2>
+            <p style="font-size: 1.05rem; line-height: 1.6;">
+              Awarded the <strong>Gold Medal</strong> in the Innovation Stream category at the PERURI Innovation Award and Kaizen Award 2024 (IAKA 2024). Served as <strong>Team Leader</strong> for the innovation project titled <em>"Rancang bangun e-commerce untuk produk specialty paper di PT Kertas Padalarang"</em>. 
+            </p>
+            <p style="font-size: 0.95rem;">
+              Presented the digital transformation model before distinguished judges on August 15, 2024, at the learning and professional certification center, Perum Peruri Karawang.
+            </p>
+          </div>
+          <div style="text-align: right;">
+            <a href="#" class="btn btn-primary">
+              View Award Certificate
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       COLLAPSIBLE DETAIL LISTS (TASK FORCE & TRAININGS)
+       ========================================================================== -->
+  <section class="section details-section" id="details">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 3rem;">
+        <span class="subtitle">Extended History</span>
+        <h2>Committees & Trainings</h2>
+        <p>Browse the comprehensive list of corporate task forces, professional training certifications, organizations, and freelance projects.</p>
+      </div>
+
+      <div class="details-grid">
+        <!-- Accordion 1: Task Forces -->
+        <div class="accordion-item reveal" id="acc-taskforce">
+          <button class="accordion-trigger">
+            <span>Corporate Task Forces & Committees</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <div class="acc-search-wrapper">
+                <input type="text" class="acc-search" id="search-taskforce" placeholder="Search task forces...">
+              </div>
+              <ul class="acc-list" id="list-taskforce">
+                <li class="acc-list-item">Person in Charge Annual Report Customer Satisfaction Index – Peruri Security Paper Mill (2025)</li>
+                <li class="acc-list-item">The 2026 Corporate Work and Budget Plan Team - Peruri Security Paper Mill (2025)</li>
+                <li class="acc-list-item">The Counterpart Team for the Preparation of the 2026-2030 Long-Term Company Plan (RJPP) of Perum Peruri's Subsidiary – Peruri Group (2025)</li>
+                <li class="acc-list-item">MarkPlus Institute x IKA FEB UNJANI: Special Episode: Campus Talk 2025 Episode 2 - Public Relation (2025)</li>
+                <li class="acc-list-item">Liputan6 x IKA FEB UNJANI: Tumbuh Bersama Liputan6 - Public Relation (2025)</li>
+                <li class="acc-list-item">Risk Agent Team - Peruri Security Paper Mill (2025-Present)</li>
+                <li class="acc-list-item">Person in Charge of IKA FEB UNJANI's Tracer Study (2025-present)</li>
+                <li class="acc-list-item">Corporate Trainer Team - Peruri Security Paper Mill (2025-Present)</li>
+                <li class="acc-list-item">Corporate Long Term Plan (RJPP) Team 2026-2030 - Peruri Security Paper Mill (2025-Present)</li>
+                <li class="acc-list-item">Intellectual Property Registration Team: Industrial Design and 3D Trademarks - Peruri Security Paper Mill (2024‒Present)</li>
+                <li class="acc-list-item">Code “CB” Project Team - Peruri Security Paper Mill (2024‒Present)</li>
+                <li class="acc-list-item">Treasurer for Green Business Webinar: "Building A Sustainable Business by Emphasizing the Triple Bottom Line..." - FEB UNJANI (2023)</li>
+                <li class="acc-list-item">Person in Charge of Customer Satisfaction Survey - Peruri Security Paper Mill (2023‒Present)</li>
+                <li class="acc-list-item">Person in Charge of e-Commerce Development Team - Peruri Security Paper Mill (2023‒Present)</li>
+                <li class="acc-list-item">Secretary of the Code “P” Project Team - Peruri Security Paper Mill (2023‒Present)</li>
+                <li class="acc-list-item">Integrated Management Systems Audit Team (SMT) - Peruri Security Paper Mill (2023‒Present)</li>
+                <li class="acc-list-item">First Aid Team for Accidents (P3K) - Peruri Security Paper Mill (2023‒Present)</li>
+                <li class="acc-list-item">The Authentication of Indonesian Excise Bands Specialist Team - Peruri Security Paper Mill (2023-2024)</li>
+                <li class="acc-list-item">Person in Charge of “Identifying the Authenticity of Indonesian Excise Bands Technical Training” at FETA, Balikpapan City (2023)</li>
+                <li class="acc-list-item">Audit Preparation Team of Indonesian National Standard (SNI) 3755:2019 for Cigarette Rolling Paper - Peruri Security Paper Mill (2022‒Present)</li>
+                <li class="acc-list-item">Person in Charge of Brand Registration of PTKP 27 Gsm Cigarette Paper - Peruri Security Paper Mill (2022)</li>
+                <li class="acc-list-item">Person in Charge of “Evaluating the Impact of Trackel Belt Implementation on Security Paper Expedition Trucks Code ‘B’" (2022)</li>
+                <li class="acc-list-item">Domestic Component Level (TKDN) Team - Peruri Security Paper Mill (2022‒Present)</li>
+                <li class="acc-list-item">Integrated Marketing Communication Team - Peruri Group (2022‒Present)</li>
+                <li class="acc-list-item">Secretary of the Broke Management and Utilization Team - Peruri Security Paper Mill (2022‒Present)</li>
+                <li class="acc-list-item">Person in Charge of “Identifying the Authenticity of Indonesian Excise Bands Technical Training” at FETA, Pekanbaru City (2023)</li>
+                <li class="acc-list-item">Secretary of the Halal Management Team - Peruri Security Paper Mill (2021‒Present)</li>
+                <li class="acc-list-item">Corporate Data Backup Team - Peruri Security Paper Mill (2021‒Present)</li>
+                <li class="acc-list-item">The Authentication of Indonesian Excise Bands Specialist Team - Peruri Security Paper Mill (2021‒Present)</li>
+                <li class="acc-list-item">Visual Communication Design Team - Peruri Security Paper Mill (2020‒Present)</li>
+                <li class="acc-list-item">QR Code Development Team - Peruri Security Paper Mill (2020)</li>
+                <li class="acc-list-item">Art Director of Danendra’s Performance at La Novia Wedding Exhibition (2019)</li>
+                <li class="acc-list-item">Chief organizer of “2014 C Management Student Night of Friendship” (2018)</li>
+                <li class="acc-list-item">Person in Charge of “Chairman and Deputy Chairman Election of UKM SENJA 2017” (2017)</li>
+                <li class="acc-list-item">Person in Charge of the SENJA Percussion Performance (UKM SENJA) at “Ecomative 2017” (2017)</li>
+                <li class="acc-list-item">Person in Charge of UKM SENJA’s Performance at the 2016 UNJANI Inauguration Event (2017)</li>
+                <li class="acc-list-item">Person in Charge of Performing Arts Events: Pensi 18 “Cincin” (2016)</li>
+                <li class="acc-list-item">Person in Charge of UKM Senja Traditional Dance Performance at the National Seminar of the Accounting Student Association (2016)</li>
+                <li class="acc-list-item">Person in Charge of the Senja Theatre (UKM SENJA) Performance at 2016 Post-Peka Event (2016)</li>
+                <li class="acc-list-item">Person in Charge of “UNJANI Art Creativity 7th Wagon (KRETA SENJA 7)” Event (2016)</li>
+                <li class="acc-list-item">Person in Charge of Poetry Percussion Performance (UKM SENJA) at “2016 Hijab Fest Bandung” (2016)</li>
+                <li class="acc-list-item">Person in Charge of “Family Gathering SENJA Class 18” Activity (2016)</li>
+                <li class="acc-list-item">Community Ambassador: 2 Event Activations and Main Event of UNJANI Art Creativity (KRETA SENJA) - PT HM Sampoerna x UKM SENI UNJANI (2016)</li>
+                <li class="acc-list-item">Person in Charge of UKM SENJA’s Performance at the “Indomaret Funbike 2016 - Bandung” (2016)</li>
+                <li class="acc-list-item">Coordinator of UKM SENJA’s 17th Anniversary Event: “Satu Tujuan (17)” (2015)</li>
+                <li class="acc-list-item">Public Relations Staff for the “Family Gathering SENJA Class 17” Activity (2015)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 2: Professional Trainings -->
+        <div class="accordion-item reveal" id="acc-training" style="transition-delay: 0.1s;">
+          <button class="accordion-trigger">
+            <span>Professional Trainings & Certs</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <div class="acc-search-wrapper">
+                <input type="text" class="acc-search" id="search-training" placeholder="Search trainings...">
+              </div>
+              <ul class="acc-list" id="list-training">
+                <li class="acc-list-item">Orientation and Training for Online Tutors – Universitas Terbuka (2026)</li>
+                <li class="acc-list-item">Instructional Guide for Learning Management System (LMS) – Peruri Security Paper Mill (2025)</li>
+                <li class="acc-list-item">Workplace Assessor Competency Training – LSP Elektronika Indonesia (2025)</li>
+                <li class="acc-list-item">Shalat with Madzhab Imam Syafi'i – Deen Academic (2025)</li>
+                <li class="acc-list-item">Internalization Program for Assessor Competency – LSP Elektronika Indonesia (2025)</li>
+                <li class="acc-list-item">The Transformation of Modern Leadership Styles Fosters Resilient Teams – Binus Center (2025)</li>
+                <li class="acc-list-item">SEM-PLS Analysis with SmartPLS – Litera Chamber Academia (2025)</li>
+                <li class="acc-list-item">Domestic Component Level (TKDN) Certification – BBSPJIS (2025)</li>
+                <li class="acc-list-item">Mahad Bimbingan Islam – Yayasan Bimbingan Islam (2025)</li>
+                <li class="acc-list-item">BilQolam – Pesantren Ilmu Al Quran (2025)</li>
+                <li class="acc-list-item">Marketing Value – MarkPlus Institute (2025)</li>
+                <li class="acc-list-item">Analytical Thinking – MarkPlus Institute (2025)</li>
+                <li class="acc-list-item">Formulating Marketing Strategy – MarkPlus Institute (2025)</li>
+                <li class="acc-list-item">Designing Seamless Omni Experience – MarkPlus Institute (2025)</li>
+                <li class="acc-list-item">Certified Digital Marketing Specialist (CDMS) – iTrain Asia, MarkPlus Institute (2024)</li>
+                <li class="acc-list-item">Marketing Course – Next MBA (2024-2025)</li>
+                <li class="acc-list-item">Sucor Sekuritas Bootcamp Batch 2 – Sucor Academy (2024)</li>
+                <li class="acc-list-item">TOEFL Preparation Course – Indonesia University of Education (2024)</li>
+                <li class="acc-list-item">Exam Preparations Course of Certified Marketing Skill Professional (CMSP) (2024)</li>
+                <li class="acc-list-item">Financial Report Analysis – Mekari University (2023)</li>
+                <li class="acc-list-item">Cyber Security Awareness Batch 4 – Perum Peruri (2023)</li>
+                <li class="acc-list-item">Auditor of ISO 9001 & ISO 28000 – PT SGS Indonesia (2023)</li>
+                <li class="acc-list-item">Digital Marketing – Perum Peruri (2023)</li>
+                <li class="acc-list-item">Introduction to Data Science – Perum Peruri (2023)</li>
+                <li class="acc-list-item">Growth Mindset – Indonesia Telecommunication & Digital Research Institute (ITDRI) (2022)</li>
+                <li class="acc-list-item">Procedures for Calculating Domestic Component Level (TKDN) – PT Sucofindo (2022)</li>
+                <li class="acc-list-item">Industry 4.0 & Future Digital Technology – Perum Peruri (2022)</li>
+                <li class="acc-list-item">Internet of Things – Edspert (2022)</li>
+                <li class="acc-list-item">Transforming IoT and Future Challenges – Perum Peruri (2022)</li>
+                <li class="acc-list-item">Blockchain Application for the Banking & Finance Sector – Perum Peruri (2022)</li>
+                <li class="acc-list-item">IoT Technology Trend, Opportunity, & Future Challenges – Perum Peruri (2022)</li>
+                <li class="acc-list-item">Robotic Process Automation for Industry 4.0 – Perum Peruri (2022)</li>
+                <li class="acc-list-item">Smart Metering in IoT Ecosystem – Perum Peruri (2022)</li>
+                <li class="acc-list-item">Strategic Guidance for Solving Complex Problems – Glints Expert Class (2022)</li>
+                <li class="acc-list-item">Halal Assurance System – Peruri Security Paper Mill (2021)</li>
+                <li class="acc-list-item">Advanced Internet of Things – Perum Peruri (2021)</li>
+                <li class="acc-list-item">Halal Assurance System Implementation Strategy – LPPOM MUI West Java (2021)</li>
+                <li class="acc-list-item">Agile & Scrum – Pijar Mahir (2021)</li>
+                <li class="acc-list-item">The Principle of Advertisement – Pijar Mahir (2021)</li>
+                <li class="acc-list-item">Branding – Pijar Mahir (2021)</li>
+                <li class="acc-list-item">Lean Start Up – Pijar Mahir (2021)</li>
+                <li class="acc-list-item">User Experience – Pijar Mahir (2021)</li>
+                <li class="acc-list-item">Growth Mindset in Digital Era – Digilearn Telkom CorpU (2021)</li>
+                <li class="acc-list-item">Internet of Things (IoT) – Perum Peruri & Telkom CorpU (2021)</li>
+                <li class="acc-list-item">Digital Transformation Awareness – Perum Peruri (2021)</li>
+                <li class="acc-list-item">Intrapreneur Fundamental – Digilearn Telkom CorpU (2021)</li>
+                <li class="acc-list-item">IoT and The Great Feature of Industry 4.0 – Perum Peruri (2021)</li>
+                <li class="acc-list-item">BUMN Digital Behaviour & Mindset – DigiLearn Telkom Indonesia (2021)</li>
+                <li class="acc-list-item">Marketing Research – MarkPlus Institute (2021)</li>
+                <li class="acc-list-item">Research & Data Science with R Mastery – Shift Academy (2021)</li>
+                <li class="acc-list-item">Powerful Brand Development for Business – Skill Academy (2020)</li>
+                <li class="acc-list-item">Social Media Management – PT TUW Global Internasional (2020)</li>
+                <li class="acc-list-item">Learning Value Chain – Markplus Institute (2020)</li>
+                <li class="acc-list-item">TOEFL Preparation Course – Indonesia University of Education (2020)</li>
+                <li class="acc-list-item">School of Kastrat – Student Executive Board of UNJANI (2015)</li>
+                <li class="acc-list-item">Basic Leadership & Organization Management – HIMAJ FE UNJANI (2014)</li>
+                <li class="acc-list-item">Basic Leadership & Organization Management – UKM SENJA UNJANI (2014)</li>
+                <li class="acc-list-item">English Course – PQEC Institute (2013-2014)</li>
+                <li class="acc-list-item">Computer Hardware Technician – LPKII (2012)</li>
+                <li class="acc-list-item">Graphic Design – Indonesian College of Science and Technology (ST-INTEN) (2009)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 3: Freelance & Organizations -->
+        <div class="accordion-item reveal" id="acc-org" style="transition-delay: 0.2s;">
+          <button class="accordion-trigger">
+            <span>Freelance, Mentorship & Orgs</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <div class="acc-search-wrapper">
+                <input type="text" class="acc-search" id="search-org" placeholder="Search activities...">
+              </div>
+              <ul class="acc-list" id="list-org">
+                <li class="acc-list-item"><strong>Corporate Web Design (Freelance):</strong> Designed websites including piozsn.co.id (PT Zhafirah Samudra Nusantara - 2022), elfatihmediainsani.co.id (CV Elfatih Media Insani - 2022), duvlenkmerch.com (Duvlenk Merch - 2022), kedaitapalkuda.com (Kedai Kopi Tapal Kuda - 2021), Pena Anak Indonesia (2021), Bengkel Narasi (2021), and layangkertas.com (2013).</li>
+                <li class="acc-list-item"><strong>Academic Tutoring & Assessors (Freelance):</strong> Knowledge Management 334 and Performance Management 369 at Universitas Terbuka (2026); Competency Assessor in Digital Marketing at LSP Retail Indonesia (2026).</li>
+                <li class="acc-list-item"><strong>Organizations:</strong> Member of Indonesia Marketing Association (IMA) Chapter 106 (ID: 106012807481, 2024-Present); Media and Communications Division Member at FEB UNJANI Alumni Association (2023-2026); Head of Support System Division at Bengkelnarasi.com (2021-Present); Head of Arts Student Activity Unit UNJANI (UKM SENJA) (2016-2017).</li>
+                <li class="acc-list-item"><strong>Mentorship:</strong> Fieldwork Practice (PKL) Supervisor for students from Binus University (2026), Bandung Technology University (2024), INABA University (2024), and Pasundan University (2024).</li>
+                <li class="acc-list-item"><strong>Internal Corporate Training:</strong> In-house Marketing Training (2025), CSI Calculations (2023), and Marketing Communications (2023) at Peruri Security Paper Mill.</li>
+                <li class="acc-list-item"><strong>Excise Band Training:</strong> Tutor for "Identifying the Authenticity of Indonesian Excise Bands" at FETA Palembang (2026), West Java Municipal Police (2022), FETA Balikpapan (2023), and FETA Pekanbaru (2023).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <span class="subtitle">Get in Touch</span>
+        <h2>Let's Collaborate</h2>
+        <p style="max-width: 600px; margin: 0 auto 3rem;">
+          Whether you want to discuss corporate strategic planning, digital marketing systems, audits, or educational collaborations, feel free to reach out.
+        </p>
+
+        <div class="contact-cards">
+          <!-- Card 1: Email -->
+          <div class="card contact-card reveal">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <h3>Email Me</h3>
+            <p>Direct professional email</p>
+            <a href="mailto:contact@andrian.id" class="contact-link-btn">contact@andrian.id</a>
+          </div>
+
+          <!-- Card 2: Phone -->
+          <div class="card contact-card reveal" style="transition-delay: 0.1s;">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <h3>Call / WhatsApp</h3>
+            <p>Mobile connection</p>
+            <a href="tel:+6285731484488" class="contact-link-btn">+62 85731484488</a>
+          </div>
+
+          <!-- Card 3: LinkedIn -->
+          <div class="card contact-card reveal" style="transition-delay: 0.2s;">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Professional network</p>
+            <a href="https://www.linkedin.com/in/andriannp" class="contact-link-btn" target="_blank" rel="noopener">linkedin.com/in/andriannp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/andriannp" class="footer-social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="mailto:contact@andrian.id" class="footer-social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+      <p class="footer-text">
+        &copy; 2026 <span>Andrian Nur Prabawa</span>. All rights reserved. Original English CV Portfolio.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
