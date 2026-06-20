@@ -1,0 +1,110 @@
+{
+  "profile": {
+    "id": "17841400000000000",
+    "username": "andriannp",
+    "name": "Andrian Nur Prabawa, S.E., M.M., CDMS",
+    "biography": "Ahli Muda Perencanaan Strategis @ PT Kertas Padalarang (Perum Peruri Group) | Certified Digital Marketing Specialist | BNSP Assessor & Auditor | Academic Tutor",
+    "profile_picture_url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop",
+    "followers_count": 1245,
+    "media_count": 48,
+    "website": "https://instagram.com/andriannp"
+  },
+  "posts": [
+    {
+      "id": "post_1",
+      "caption": "Leading corporate digital transformation projects for Specialty Paper. Proud to receive the Gold Medal at PERURI Innovation Award 2024! 🏆✨ #innovation #corporate #business #digitaltransformation",
+      "media_type": "IMAGE",
+      "media_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=600&fit=crop",
+      "permalink": "https://www.instagram.com/p/post_1",
+      "timestamp": "2026-05-15T12:00:00Z",
+      "like_count": 142,
+      "comments_count": 18
+    },
+    {
+      "id": "post_2",
+      "caption": "Graduated with a Master's Degree in Management (M.M.) from Universitas Jenderal Achmad Yani. Grateful for the journey and ready for the next strategic challenges. 🎓💼 #masterofmanagement #graduation #achievement #highereducation",
+      "media_type": "IMAGE",
+      "media_url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=600&fit=crop",
+      "permalink": "https://www.instagram.com/p/post_2",
+      "timestamp": "2024-10-10T08:30:00Z",
+      "like_count": 289,
+      "comments_count": 42
+    },
+    {
+      "id": "post_3",
+      "caption": "Officially certified as a BNSP Competency Assessor in Retail & Digital Marketing. Excited to assess and certify the next generation of marketing professionals! 📋📈 #bnsp #assessor #digitalmarketing #certification",
+      "media_type": "IMAGE",
+      "media_url": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=600&fit=crop",
+      "permalink": "https://www.instagram.com/p/post_3",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "like_count": 195,
+      "comments_count": 24
+    },
+    {
+      "id": "post_4",
+      "caption": "Co-authored the academic book \"Pengantar Sistem Informasi Manajemen\". An effort to bridge academic theories with practical enterprise management systems. 📚💻 #sim #management #academic #author #publishing",
+      "media_type": "IMAGE",
+      "media_url": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=600&fit=crop",
+      "permalink": "https://www.instagram.com/p/post_4",
+      "timestamp": "2023-11-05T09:15:00Z",
+      "like_count": 156,
+      "comments_count": 12
+    },
+    {
+      "id": "post_5",
+      "caption": "Strategic planning session with PT Kertas Padalarang counterpart team. Formulating the corporate roadmaps and RJPP (Long-Term Corporate Plan) for 2026-2030. 🗺️📊 #strategicplanning #corporate #peruri #roadmaps",
+      "media_type": "IMAGE",
+      "media_url": "https://images.unsplash.com/photo-1542744173-8e08562744ad?w=600&h=600&fit=crop",
+      "permalink": "https://www.instagram.com/p/post_5",
+      "timestamp": "2025-07-22T14:45:00Z",
+      "like_count": 180,
+      "comments_count": 15
+    },
+    {
+      "id": "post_6",
+      "caption": "Certified Secure Computer User (CSCU) by EC-Council. In the digital age, cybersecurity awareness is a vital element of strategic corporate governance. 🔒💻 #cybersecurity #cscu #eccouncil #leadership",
+      "media_type": "IMAGE",
+      "media_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=600&fit=crop",
+      "permalink": "https://www.instagram.com/p/post_6",
+      "timestamp": "2023-09-12T11:20:00Z",
+      "like_count": 130,
+      "comments_count": 8
+    }
+  ],
+  "reels": [
+    {
+      "id": "reel_1",
+      "caption": "Quick breakdown of the Technology Acceptance Model (TAM) for digital stamp duty. Highlighting our findings from the published MSEJ journal paper! 🎥📊 #reels #management #research #learning #tam",
+      "media_type": "VIDEO",
+      "media_url": "https://assets.mixkit.co/videos/preview/mixkit-business-people-meeting-around-table-in-office-41589-large.mp4",
+      "thumbnail_url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=1000&fit=crop",
+      "permalink": "https://www.instagram.com/reel/reel_1",
+      "timestamp": "2026-04-02T13:10:00Z",
+      "like_count": 312,
+      "comments_count": 22
+    },
+    {
+      "id": "reel_2",
+      "caption": "3 key tips for aligning Corporate KPIs across directorates, VPs, and departmental levels. Strategic Management 101. 💡📋 #kpi #corporate #strategy #reelsinstagram",
+      "media_type": "VIDEO",
+      "media_url": "https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-businessman-writing-on-a-notebook-41617-large.mp4",
+      "thumbnail_url": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=600&h=1000&fit=crop",
+      "permalink": "https://www.instagram.com/reel/reel_2",
+      "timestamp": "2026-05-20T15:30:00Z",
+      "like_count": 245,
+      "comments_count": 19
+    },
+    {
+      "id": "reel_3",
+      "caption": "A day in my life as an Online Academic Tutor at Universitas Terbuka. Guiding students in Economics & Business Management courses. 🎓💻 #academic #tutor #business #dayinmylife #ut",
+      "media_type": "VIDEO",
+      "media_url": "https://assets.mixkit.co/videos/preview/mixkit-young-woman-working-on-a-laptop-at-home-40248-large.mp4",
+      "thumbnail_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=1000&fit=crop",
+      "permalink": "https://www.instagram.com/reel/reel_3",
+      "timestamp": "2026-03-10T08:00:00Z",
+      "like_count": 420,
+      "comments_count": 35
+    }
+  ],
+  "updated_at": "2026-06-20T08:40:00.000Z"
+}
