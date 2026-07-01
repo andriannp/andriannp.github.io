@@ -1,80 +1,390 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official teaser website of Andrian Nur Prabawa, S.E., M.M., CDMS - Strategic Planning Specialist & Certified Marketer. Portfolio lengkap sedang disiapkan.">
-  <title>Andrian Nur Prabawa | Coming Soon</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1024">
+<title>Andrian Nur Prabawa, S.E., M.M., CDMS</title>
+<style>
+  :root{
+    --biru-tua:#0a3d62;
+    --biru:#1e6091;
+    --biru-terang:#2a9df4;
+    --abu-bg:#f2f4f6;
+    --abu-garis:#d8dee3;
+    --teks:#2c3338;
+    --teks-lembut:#5b6670;
+    --hijau:#2e8b57;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Segoe UI", Arial, sans-serif;
+    background:var(--abu-bg);
+    color:var(--teks);
+    font-size:13px;
+  }
+
+  /* Header */
+  header{
+    background:linear-gradient(180deg, var(--biru-tua), var(--biru));
+    color:#fff;
+    padding:14px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+  }
+  header .brand{display:flex;align-items:center;gap:10px;}
+  header .brand .logo{
+    width:34px;height:34px;border-radius:6px;
+    background:#fff;color:var(--biru-tua);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:13px;
+  }
+  header .brand-text{line-height:1.25;}
+  header .brand-text strong{font-size:15px;letter-spacing:.3px;}
+  header .brand-text span{display:block;font-size:11px;opacity:.85;}
+  header nav a{color:#fff;text-decoration:none;font-size:12px;margin-left:18px;opacity:.9;}
+  header nav a:hover{opacity:1;text-decoration:underline;}
+
+  .wrap{max-width:100%;margin:20px auto;padding:0 16px;}
+
+  h1.judul{
+    font-size:16px;
+    color:var(--biru-tua);
+    border-left:4px solid var(--biru-terang);
+    padding-left:10px;
+    margin:0 0 14px;
+  }
+
+  /* Tabs */
+  .tabs{
+    display:flex;
+    border-bottom:2px solid var(--abu-garis);
+    margin-bottom:0;
+    flex-wrap:wrap;
+  }
+  .tabs a{
+    text-decoration:none;
+    color:var(--teks-lembut);
+    padding:10px 18px;
+    font-size:12.5px;
+    font-weight:600;
+    border:1px solid transparent;
+    border-bottom:none;
+    border-radius:6px 6px 0 0;
+    margin-right:4px;
+    background:#e9edf1;
+  }
+  .tabs a.aktif{
+    color:var(--biru-tua);
+    background:#fff;
+    border-color:var(--abu-garis);
+    position:relative;
+    top:2px;
+  }
+  .tabs a:hover:not(.aktif){background:#dfe6ec;}
+
+  .panel{
+    background:#fff;
+    border:1px solid var(--abu-garis);
+    border-top:none;
+    padding:0;
+  }
+
+  table.info{
+    width:100%;
+    border-collapse:collapse;
+  }
+  table.info td{
+    padding:10px 14px;
+    vertical-align:top;
+    border-bottom:1px solid #eef1f3;
+    font-size:12.5px;
+  }
+  table.info tr:last-child td{border-bottom:none;}
+  table.info td.label{
+    width:230px;
+    color:var(--teks-lembut);
+    font-weight:600;
+    background:#fafbfc;
+  }
+  table.info td.label::before{content:"▸ ";color:var(--biru-terang);}
+  table.info td strong{color:var(--teks);}
+  table.info a{color:var(--biru);text-decoration:none;}
+  table.info a:hover{text-decoration:underline;}
+
+  .badge{
+    display:inline-block;
+    padding:3px 10px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:700;
+  }
+  .badge-selesai{background:#e4f4ea;color:var(--hijau);}
+
+  .nilai{font-weight:700;color:var(--biru-tua);}
+
+  /* Nested tables for qualifications */
+  .sub-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:6px 0;
+    font-size:12px;
+  }
+  .sub-table th, .sub-table td{
+    border:1px solid var(--abu-garis);
+    padding:6px 8px;
+    text-align:left;
+  }
+  .sub-table th{
+    background:var(--abu-bg);
+    color:var(--biru-tua);
+  }
+
+  details{
+    margin:6px 0;
+    border:1px solid var(--abu-garis);
+    border-radius:6px;
+    background:#fafbfc;
+  }
+  details summary{
+    cursor:pointer;
+    padding:8px 12px;
+    font-weight:600;
+    color:var(--biru-tua);
+    list-style:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::before{content:"▸ ";display:inline-block;transition:transform .15s;}
+  details[open] summary::before{transform:rotate(90deg);}
+  details .isi{padding:0 12px 12px;}
+
+  footer{
+    text-align:center;
+    color:var(--teks-lembut);
+    font-size:11.5px;
+    padding:24px 16px 40px;
+  }
+  footer a{color:var(--biru);text-decoration:none;}
+
+  @media (max-width:640px){
+    table.info td.label{width:120px;}
+    header{flex-direction:column;align-items:flex-start;gap:8px;}
+    header nav{display:flex;flex-wrap:wrap;}
+    header nav a{margin:2px 10px 2px 0;}
+  }
+</style>
 </head>
 <body>
 
-  <!-- Animated Gradient Mesh Background -->
-  <div class="gradient-bg" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
+<header>
+  <div class="brand">
+    <div class="logo">ANP</div>
+    <div class="brand-text">
+      <strong>Andrian Nur Prabawa., S.E., M.M., CDMS</strong>
+      <span>Certified Marketer, BNSP's Assessor Competency, Academic Tutor</span>
+    </div>
+  </div>
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="https://blog.andrian.id">Blog</a>
+    <a href="#">Hubungi Saya</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <h1 class="judul">Curriculum Vitae</h1>
+
+  <div class="tabs">
+    <a href="#" class="tab-link aktif" data-tab="data diri">Data Diri</a>
+    <a href="#" class="tab-link" data-tab="agenda">Agenda</a>
+    <a href="#" class="tab-link" data-tab="dokumentasi">Dokumentasi</a>
+    <a href="#" class="tab-link" data-tab="kontak">Kontak</a>
   </div>
 
-  <!-- Main Container -->
-  <div class="page-wrapper">
-    <main class="glass-card">
-      
-      <!-- Profile Picture Section -->
-      <div class="profile-avatar-wrapper">
-        <div class="avatar-glow"></div>
-        <!-- Untuk mengganti foto profil Anda:
-             Ganti file di assets/images/profile.jpg dengan foto jas formal Anda.
-             Pastikan nama file dan foldernya sama persis. -->
-        <img src="assets/images/profile.jpg" alt="Andrian Nur Prabawa, S.E., M.M., CDMS" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop';">
-      </div>
-
-      <!-- Uppercase Status Label -->
-      <div class="status-label">COMING SOON</div>
-
-      <!-- Professional Identity -->
-      <h1 class="name">Andrian Nur Prabawa, <span class="credentials">S.E., M.M., CDMS</span></h1>
-      <div class="job-title">Ahli Muda Perencanaan Strategis &mdash; PT Kertas Padalarang (Peruri Group)</div>
-      
-      <p class="teaser">
-        Certified marketer dengan 7+ tahun pengalaman di strategic planning & marketing &mdash; portfolio lengkap saya sedang disiapkan.
-      </p>
-
-      <!-- Highlight Chips -->
-      <div class="chips-container" aria-label="Highlight Pencapaian & Kualifikasi">
-        <span class="chip">Master's in Management</span>
-        <span class="chip">Certified Digital Marketing Specialist (CDMS)</span>
-        <span class="chip">BNSP Competency Assessor</span>
-        <span class="chip">Gold Medalist &ndash; PERURI Innovation Award 2024</span>
-        <span class="chip">Penulis 2 Buku Akademik</span>
-        <span class="chip">ISO 9001 & 28000 Auditor</span>
-      </div>
-
-      <!-- Main Call-To-Action (CTA) -->
-      <div class="cta-wrapper">
-        <a href="https://instagram.com/andriannp" target="_blank" rel="noopener noreferrer" class="btn-cta" aria-label="Follow Andrian Nur Prabawa di Instagram (membuka tab baru)">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-          Follow di Instagram
-        </a>
-      </div>
-
-      <!-- Minimalist Footer -->
-      <footer class="minimal-footer">
-        <span class="copyright">&copy; 2026 Andrian Nur Prabawa</span>
-        <span class="dot" aria-hidden="true">&middot;</span>
-        <a href="https://andrian.id" class="footer-link">andrian.id</a>
-      </footer>
-
-    </main>
+  <div class="panel tab-panel" id="panel-data diri">
+    <table class="info">
+      <tr>
+        <td class="label">Nama Lengkap</td>
+        <td><strong>Andrian Nur Prabawa</strong>, S.E., M.M., CDMS</td>
+      </tr>
+      <tr>
+        <td class="label">Domisili</td>
+        <td>Kabupaten Bandung Barat, Indonesia</td>
+      </tr>
+        <tr>
+        <td class="label">Suku Bangsa</td>
+        <td>Sunda</td>
+      </tr>
+      <tr>
+        <td class="label">Agama</td>
+        <td>Islam</td>
+      </tr>
+       <tr>
+        <td class="label">Jabatan Profesional</td>
+        <td><strong>Ahli Muda Pengembangan Strategis</strong> - Direktorat Utama, Sekretariat Perusahaan dan Pengembangan Strategis, PT Kertas Padalarang (Peruri Security Paper Mill)</td>
+      </tr>
+      <tr>
+        <td class="label">Jabatan Fungsional</td>
+        <td>
+          <table class="sub-table">
+            <tr><th><center>Nama Jabatan</center></th><th><center>Lembaga</center></th><th><center>Tahun</center></th></tr>
+            <tr><td>Tutor Akademik</td><td>Fakultas Ekonomi dan Bisnis, Universitas Jenderal Achmad Yani</td><td>2026-saat ini</td></tr>
+            <tr><td>Asesor Kompetensi</td><td>Lembaga Sertifikasi Profesi Retail Indonesia (LSP Retail Indonesia)</td><td>2025-saat ini</td></tr>
+          </table>
+        </td>
+      </tr>
+        <tr>
+        <td class="label">Sertifikasi Kompetensi</td>
+        <td>
+          <table class="sub-table">
+            <tr><th><center>Unit Kompetensi</center></th><th><center>Penerbit</center></th><th><center>Tahun</center></th></tr>
+            <tr><td>Asesor Kompetensi</td><td>Badan Nasional Sertifikasi Profesi</td><td>2025</td></tr>
+            <tr><td>Certified Digital Marketing Specialist (CDMS)</td><td>iTrainAsia, Singapura</td><td>2024</td></tr>
+            <tr><td>Certified Marketing Skills Professional (CMSP)</td><td>Revolution Mind Indonesia®</td><td>2024</td></tr>
+            <tr><td>Certified Secure Computer User V3 (CSCU)</td><td>EC-Counsil</td><td>2023</td></tr>
+            <tr><td>Pemasaran <i>Online</i></td><td>Badan Nasional Sertifikasi Profesi</td><td>2023</td></tr>
+            <tr><td>Perekayasaan Perangkat <i>Internet of Things</i></td><td>Badan Nasional Sertifikasi Profesi</td><td>2022</td></tr>
+            <tr><td>Digital Marketing</td><td>MarkPlus Institute</td><td>2021</td></tr>
+            <tr><td>Tenaga Pemasar Operasional Area Kerja Pengelolaan Merek</td><td>Badan Nasional Sertifikasi Profesi</td><td>2021</td></tr>
+            <tr><td>Marketing 4.0</td><td>MarkPlus Institute</td><td>2020</td></tr>
+            <tr><td>Teknis Hardware Komputer</td><td>Lembaga Pendidikan Komputer Informatika Indonesia</td><td>2012</td></tr>
+          </table>
+        </td>
+      </tr>
+        <tr>
+        <td class="label">Kompetensi Inti</td>
+        <td>Manajemen Pemasaran, Perilaku Konsumen, Riset Pasar, Digital Marketing</td>
+      </tr>
+        <tr>
+        <td class="label">Penghargaan</td>
+        <td><i>Gold medal</i> pada stream Inovasi di PERURI Innovation Award and Kaizen Award 2024 (IAKA 2024) untuk proposal yang berjudul “rancang bangun e-commerce untuk produk <i>specialty paper</i> di PT Kertas Padalarang” dengan peran sebagai Tim Leader</td>
+      </tr>
+       <tr>
+        <td class="label">Jurnal</td>
+        <td>Prabawa, A. N., Romi, M. V., C Abdillah, A. F. (2024). Understanding Consumer Intention to Use Indonesian Electronic Stamp Duty through Technology Acceptance Model (TAM): Study on PT Peruri Digital Security’s Consumer. Management Studies and Entrepreneurship Journal (MSEJ), 5(1), 3045–3060. https://doi.org/10.37385/msej.v5i1.4440</td>
+      </tr>
+      <tr>
+        <td class="label">Buku</td>
+        <td>
+          <table class="sub-table">
+            <tr><th><center>Judul</center></th><th><center>Penerbit</center></th><th><center>Tahun</center></th></tr>
+            <tr><td>Pengantar Sistem Informasi Manajemen</td><td>PT Literasi Nusantara Abadi Grup, Malang</td><td>2023</td></tr>
+            <tr><td>Manajemen Pemasaran (Perspektif Internet of Things)</td><td>CV Media Sains Indonesia</td><td>2023</td></tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Pendidikan</td>
+        <td>
+        <table class="sub-table">
+        <tr><th><center>Gelar</center></th><th><center>Universitas</center></th><th><center>Tahun</center></th><th><center>IPK</center></th></tr>
+        <tr><td>Magister Manajemen</td><td>Universitas Jenderal Achmad Yani</td><td>2022-2024</td><td>3.78/4.00</td></tr>
+        <tr><td>Sarjana Ekonomi</td><td>Universitas Jenderal Achmad Yani</td><td>2014-2018</td><td>3.65/4.00</td></tr>
+        <tr><td>Ahli Pratama Teknologi Informasi</td><td>Politeknik Elektronika Negeri Surabaya</td><td>2010-2011</td><td>3.59/4.00</td></tr>
+       </table>
+       </td>
+      </tr>
+      <tr>
+        <td class="label">Pengalaman Organisasi</td>
+        <td>
+          <table class="sub-table">
+            <tr><th><center>Jabatan</center></th><th><center>Organisasi</center></th><th><center>Tahun</center></th></tr>
+            <tr><td>Anggota</td><td>Indonesia Marketing Association (IMA) Chapter 106</td><td>2024-2026</td></tr>
+            <tr><td>Staf Komunikasi dan Informasi</td><td>Ikatan Keluarga Alumni Fakultas Ekonomi dan Bisnis Universitas Jenderal Achmad Yani</td><td>2023-2026</td></tr>
+          </table>
+        </td>
+      </tr>
+     </table>
   </div>
 
-  <script src="script.js"></script>
+  <div class="panel tab-panel" id="panel-agenda" hidden>
+    <table class="sub-table" style="border:none;margin:0;">
+      <tr>
+        <th><center>Tanggal</center></th>
+        <th><center>Agenda</center></th>
+        <th><center>Lokasi</center></th>
+        <th><center>Status</center></th>
+      </tr>
+      <tr>
+        <td>13 April s/d 7 Juni 2026</td>
+        <td>Turorial Online mata kuliah Manajemen Pengetahuan dan Manajemen Kinerja</td>
+        <td>Fakultas Ekonomi dan Bisnis, Universitas Terbuka (secara daring)</td>
+        <td><center><span class="badge badge-selesai">Selesai</center></span></td>
+      </tr>
+      <tr>
+        <td>30 Januari 2026</td>
+        <td>Uji Kompetensi Digital Marketing - LSP Retail Indonesia </td>
+        <td>Politeknik Pembangunan Pertanian, Medan (secara daring)</td>
+        <td><center><span class="badge badge-selesai">Selesai</center></span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel tab-panel" id="panel-dokumentasi" hidden>
+    <table class="info">
+      <tr>
+        <td class="label"><i>Curriculum Vitae</i></td>
+        <td><a href="#">📄 CV - Andrian Nur Prabawa.pdf</a></td>
+      </tr>
+      <tr>
+        <td class="label">Materi Inisiasi Tutorial Online</td>
+        <td><a href="#">📁 Manajemen Kinerja</a>
+        <br/><a href="#">📁 Manajemen Pengetahuan</a></td>
+      </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel tab-panel" id="panel-kontak" hidden>
+    <table class="info">
+      <tr>
+        <td class="label">Kantor</td>
+        <td><strong>Direktorat Utama, Sekretariat Perusahaan dan Perencanaan Strategis, PT Kertas Padalarang</strong></td>
+      </tr>
+      <tr>
+        <td class="label">Alamat</td>
+        <td>Jl. Cihaliwung no 181 Padalarang, Bandung Barat, Jawa Barat</td>
+      </tr>
+      <tr>
+        <td class="label">Email</td>
+        <td>contact@andrian.id</td>
+      </tr>
+      <tr>
+        <td class="label">Blog</td>
+        <td class="nilai"><a href="https://blog.andrian.id">blog.andrian.id</a></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <footer>
+    © 2026 <a href="#">Andrian Nur Prabawa</a><br>
+    Curriculum Vitae
+  </footer>
+</div>
+
+<script>
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const panels = document.querySelectorAll('.tab-panel');
+
+  tabLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = link.dataset.tab;
+
+      tabLinks.forEach(l => l.classList.remove('aktif'));
+      link.classList.add('aktif');
+
+      panels.forEach(p => {
+        p.hidden = (p.id !== 'panel-' + target);
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
