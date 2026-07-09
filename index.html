@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1024">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Andrian Nur Prabawa, S.E., M.M., CDMS</title>
 <style>
   :root{
@@ -16,13 +16,16 @@
     --hijau:#2e8b57;
   }
   *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
   body{
     margin:0;
     font-family:"Segoe UI", Arial, sans-serif;
     background:var(--abu-bg);
     color:var(--teks);
-    font-size:13px;
+    font-size:14px;
+    overflow-x:hidden;
   }
+  img{max-width:100%;}
 
   /* Header */
   header{
@@ -47,7 +50,7 @@
   header nav a{color:#fff;text-decoration:none;font-size:12px;margin-left:18px;opacity:.9;}
   header nav a:hover{opacity:1;text-decoration:underline;}
 
-  .wrap{max-width:100%;margin:20px auto;padding:0 16px;}
+  .wrap{max-width:960px;margin:20px auto;padding:0 16px;}
 
   h1.judul{
     font-size:16px;
@@ -100,7 +103,8 @@
     padding:10px 14px;
     vertical-align:top;
     border-bottom:1px solid #eef1f3;
-    font-size:12.5px;
+    font-size:13px;
+    word-break:break-word;
   }
   table.info tr:last-child td{border-bottom:none;}
   table.info td.label{
@@ -113,6 +117,13 @@
   table.info td strong{color:var(--teks);}
   table.info a{color:var(--biru);text-decoration:none;}
   table.info a:hover{text-decoration:underline;}
+
+  /* Wrapper agar tabel bersarang bisa scroll horizontal sendiri tanpa merusak layout halaman */
+  .table-scroll{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+  }
 
   .badge{
     display:inline-block;
@@ -128,6 +139,7 @@
   /* Nested tables for qualifications */
   .sub-table{
     width:100%;
+    min-width:480px;
     border-collapse:collapse;
     margin:6px 0;
     font-size:12px;
@@ -136,6 +148,7 @@
     border:1px solid var(--abu-garis);
     padding:6px 8px;
     text-align:left;
+    white-space:normal;
   }
   .sub-table th{
     background:var(--abu-bg);
@@ -168,11 +181,61 @@
   }
   footer a{color:var(--biru);text-decoration:none;}
 
+  /* ==== Tablet ==== */
+  @media (max-width:768px){
+    .wrap{padding:0 12px;margin:14px auto;}
+    h1.judul{font-size:15px;}
+    table.info td.label{width:150px;}
+  }
+
+  /* ==== Mobile ==== */
   @media (max-width:640px){
-    table.info td.label{width:120px;}
-    header{flex-direction:column;align-items:flex-start;gap:8px;}
+    body{font-size:13px;}
+
+    header{flex-direction:column;align-items:flex-start;gap:10px;padding:12px 16px;}
     header nav{display:flex;flex-wrap:wrap;}
-    header nav a{margin:2px 10px 2px 0;}
+    header nav a{margin:2px 14px 2px 0;font-size:12px;}
+    header .brand-text strong{font-size:14px;}
+
+    .wrap{padding:0 10px;margin:12px auto;}
+    h1.judul{font-size:14.5px;margin-bottom:10px;}
+
+    /* Tabs jadi bisa discroll horizontal, tidak menumpuk berantakan */
+    .tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;border-bottom:2px solid var(--abu-garis);}
+    .tabs a{flex:0 0 auto;padding:9px 14px;font-size:12px;}
+
+    /* Tabel info: label & isi ditumpuk vertikal seperti kartu */
+    table.info, table.info tbody, table.info tr, table.info td{
+      display:block;
+      width:100%;
+    }
+    table.info tr{
+      border-bottom:1px solid var(--abu-garis);
+      padding:10px 0;
+    }
+    table.info tr:last-child{border-bottom:none;}
+    table.info td{
+      padding:4px 0;
+      border-bottom:none;
+    }
+    table.info td.label{
+      width:100%;
+      background:transparent;
+      padding-bottom:2px;
+      font-size:11.5px;
+      text-transform:uppercase;
+      letter-spacing:.3px;
+    }
+
+    /* Sub-table (jabatan, sertifikasi, pendidikan, dsb) dibungkus scroll horizontal */
+    .sub-table{font-size:11.5px;}
+    .sub-table th, .sub-table td{padding:5px 7px;}
+  }
+
+  @media (max-width:400px){
+    header .brand-text strong{font-size:13px;}
+    header .brand-text span{font-size:10px;}
+    .tabs a{padding:8px 12px;font-size:11.5px;}
   }
 </style>
 </head>
@@ -228,17 +291,17 @@
       <tr>
         <td class="label">Jabatan Fungsional</td>
         <td>
-          <table class="sub-table">
+          <div class="table-scroll"><table class="sub-table">
             <tr><th><center>Nama Jabatan</center></th><th><center>Lembaga</center></th><th><center>Tahun</center></th></tr>
             <tr><td>Tutor Akademik</td><td>Fakultas Ekonomi dan Bisnis, Universitas Jenderal Achmad Yani</td><td>2026-saat ini</td></tr>
             <tr><td>Asesor Kompetensi</td><td>Lembaga Sertifikasi Profesi Retail Indonesia (LSP Retail Indonesia)</td><td>2025-saat ini</td></tr>
-          </table>
+          </table></div>
         </td>
       </tr>
         <tr>
         <td class="label">Sertifikasi Kompetensi</td>
         <td>
-          <table class="sub-table">
+          <div class="table-scroll"><table class="sub-table">
             <tr><th><center>Unit Kompetensi</center></th><th><center>Penerbit</center></th><th><center>Tahun</center></th></tr>
             <tr><td>Asesor Kompetensi</td><td>Badan Nasional Sertifikasi Profesi, Indonesia</td><td>2025</td></tr>
             <tr><td>Certified Digital Marketing Specialist (CDMS)</td><td>iTrainAsia, Singapura</td><td>2024</td></tr>
@@ -250,7 +313,7 @@
             <tr><td>Tenaga Pemasar Operasional Area Kerja Pengelolaan Merek</td><td>Badan Nasional Sertifikasi Profesi, Indonesia</td><td>2021</td></tr>
             <tr><td>Marketing 4.0</td><td>MarkPlus Institute, Indonesia</td><td>2020</td></tr>
             <tr><td>Teknis Hardware Komputer</td><td>Lembaga Pendidikan Komputer Informatika Indonesia, Indonesia</td><td>2012</td></tr>
-          </table>
+          </table></div>
         </td>
       </tr>
         <tr>
@@ -268,39 +331,39 @@
       <tr>
         <td class="label">Buku</td>
         <td>
-          <table class="sub-table">
+          <div class="table-scroll"><table class="sub-table">
             <tr><th><center>ISBN</center></th><th><center>Judul</center></th><th><center>Penerbit</center></th><th><center>Tahun</center></th></tr>
             <tr><td>978-623-8246-37-3</td><td>Pengantar Sistem Informasi Manajemen</td><td>PT Literasi Nusantara Abadi Grup, Malang</td><td>2023</td></tr>
             <tr><td>978-623-195-122-9</td><td>Manajemen Pemasaran (Perspektif Internet of Things)</td><td>CV Media Sains Indonesia, Bandung</td><td>2023</td></tr>
-          </table>
+          </table></div>
         </td>
       </tr>
       <tr>
         <td class="label">Pendidikan</td>
         <td>
-        <table class="sub-table">
+        <div class="table-scroll"><table class="sub-table">
         <tr><th><center>Gelar</center></th><th><center>Universitas</center></th><th><center>Tahun</center></th><th><center>IPK</center></th></tr>
         <tr><td>Magister Manajemen</td><td>Universitas Jenderal Achmad Yani</td><td>2022-2024</td><td>3.78/4.00</td></tr>
         <tr><td>Sarjana Ekonomi</td><td>Universitas Jenderal Achmad Yani</td><td>2014-2018</td><td>3.65/4.00</td></tr>
         <tr><td>Ahli Pratama Teknologi Informasi</td><td>Politeknik Elektronika Negeri Surabaya</td><td>2010-2011</td><td>3.59/4.00</td></tr>
-       </table>
+       </table></div>
        </td>
       </tr>
       <tr>
         <td class="label">Pengalaman Organisasi</td>
         <td>
-          <table class="sub-table">
+          <div class="table-scroll"><table class="sub-table">
             <tr><th><center>Jabatan</center></th><th><center>Organisasi</center></th><th><center>Tahun</center></th></tr>
             <tr><td>Anggota</td><td>Indonesia Marketing Association (IMA) Chapter 106</td><td>2024-2026</td></tr>
             <tr><td>Staf Komunikasi dan Informasi</td><td>Ikatan Keluarga Alumni Fakultas Ekonomi dan Bisnis Universitas Jenderal Achmad Yani</td><td>2023-2026</td></tr>
-          </table>
+          </table></div>
         </td>
       </tr>
      </table>
   </div>
 
   <div class="panel tab-panel" id="panel-agenda" hidden>
-    <table class="sub-table" style="border:none;margin:0;">
+    <div class="table-scroll"><table class="sub-table" style="border:none;margin:0;">
       <tr>
         <th><center>Tanggal</center></th>
         <th><center>Agenda</center></th>
@@ -325,7 +388,7 @@
         <td>Daring dan luring di berbagai lokasi Konsumen</td>
         <td><center><span class="badge badge-selesai">Selesai</center></span></td>
       </tr>
-    </table>
+    </table></div>
   </div>
 
   <div class="panel tab-panel" id="panel-dokumentasi" hidden>
@@ -338,9 +401,6 @@
         <td class="label">Materi Inisiasi Tutorial Online</td>
         <td><a href="#">📁 Manajemen Kinerja</a>
         <br/><a href="#">📁 Manajemen Pengetahuan</a></td>
-      </tr>
-          </table>
-        </td>
       </tr>
     </table>
   </div>
